@@ -1,0 +1,253 @@
+{
+  "info": {
+    "name": "Ayurvedic Herb Traceability API",
+    "description": "Complete API testing collection for the blockchain-based herb traceability system",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Farmers API",
+      "item": [
+        {
+          "name": "Create Farmer (Valid)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Test Farmer\",\n  \"email\": \"test@farmer.com\",\n  \"phone\": \"+911234567890\",\n  \"address\": {\n    \"street\": \"123 Farm Street\",\n    \"city\": \"Bangalore\",\n    \"state\": \"Karnataka\",\n    \"pincode\": \"560001\"\n  },\n  \"farmDetails\": {\n    \"farmName\": \"Green Farm\",\n    \"farmSize\": 5.5,\n    \"farmType\": \"Organic\",\n    \"soilType\": \"Loamy\",\n    \"irrigationType\": \"Drip\"\n  },\n  \"location\": {\n    \"latitude\": 12.9716,\n    \"longitude\": 77.5946\n  },\n  \"specializations\": [\"Turmeric\", \"Neem\"],\n  \"notes\": \"Experienced organic farmer with 10+ years\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/farmers",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "farmers"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Farmer (Missing Fields)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"\",\n  \"email\": \"invalid-email\",\n  \"phone\": \"123\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/farmers",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "farmers"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Farmer by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/api/farmers/{{farmerId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "farmers", "{{farmerId}}"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Farmer (Invalid ID)",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/api/farmers/invalid-id",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "farmers", "invalid-id"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get All Farmers",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/api/farmers",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "farmers"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Herbs API",
+      "item": [
+        {
+          "name": "Register Herb (Valid)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Organic Turmeric\",\n  \"scientificName\": \"Curcuma longa\",\n  \"origin\": \"Karnataka, India\",\n  \"harvestDate\": \"2024-12-01\",\n  \"farmerName\": \"Test Farmer\",\n  \"farmerContact\": \"+911234567890\",\n  \"latitude\": \"12.9716\",\n  \"longitude\": \"77.5946\",\n  \"locationAddress\": \"Bangalore, Karnataka\",\n  \"variety\": \"Salem Turmeric\",\n  \"quantity\": \"100\",\n  \"unit\": \"kg\",\n  \"description\": \"Premium organic turmeric grown without pesticides\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/herbs",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "herbs"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Register Herb (Missing Fields)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"\",\n  \"scientificName\": \"\",\n  \"harvestDate\": \"invalid-date\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/herbs",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "herbs"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Herb by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/api/herbs/{{herbId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "herbs", "{{herbId}}"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Herb (Invalid ID)",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/api/herbs/invalid-herb-id",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "herbs", "invalid-herb-id"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get All Herbs",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/api/herbs",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "herbs"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Traceability API",
+      "item": [
+        {
+          "name": "Get Herb Traceability",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/api/traceability/{{herbId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "traceability", "{{herbId}}"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Traceability (Invalid Herb ID)",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/api/traceability/invalid-herb-id",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "traceability", "invalid-herb-id"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Status & Health Check",
+      "item": [
+        {
+          "name": "Health Check",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/api/health",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "health"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Server Status",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/",
+              "host": ["{{baseUrl}}"]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8080",
+      "type": "string"
+    },
+    {
+      "key": "farmerId",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "herbId",
+      "value": "",
+      "type": "string"
+    }
+  ]
+}

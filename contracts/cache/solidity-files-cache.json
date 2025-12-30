@@ -1,0 +1,75 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "C:\\SIH 2025\\ayurveda-herb-traceability\\contracts\\contracts\\Greeter.sol": {
+      "lastModificationDate": 1758637271585,
+      "contentHash": "ade2ee31e62a33b8d918eec9d2d66c1b",
+      "sourceName": "contracts/Greeter.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "Greeter"
+      ]
+    },
+    "C:\\SIH 2025\\ayurveda-herb-traceability\\contracts\\contracts\\HerbTraceability.sol": {
+      "lastModificationDate": 1758640049210,
+      "contentHash": "7c8794335d9e6c7ed8338b050e22a640",
+      "sourceName": "contracts/HerbTraceability.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "HerbTraceability"
+      ]
+    }
+  }
+}
