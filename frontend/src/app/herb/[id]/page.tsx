@@ -19,6 +19,7 @@ import {
   ExternalLink,
   Eye
 } from 'lucide-react';
+import { QRCodeDisplay } from '@/components/QRCodeDisplay';
 
 interface HerbData {
   herbId: string;
@@ -548,6 +549,15 @@ export default function HerbDetailsPage() {
               )}
             </CardContent>
           </Card>
+
+          {/* QR Code for Final Products */}
+          <div className="mt-6">
+            <QRCodeDisplay 
+              herbId={herb.herbId}
+              herbName={herb.name}
+              currentStatus={herb.status}
+            />
+          </div>
         </div>
 
         {/* Complete Traceability Journey Timeline */}
