@@ -16,11 +16,10 @@ connectDB();
 
 // Middleware
 app.use(cors({
-  origin: [
-    process.env.FRONTEND_URL || 'http://localhost:3000',
-    'http://localhost:3001',  // Next.js fallback port
-    'http://localhost:3002'   // Additional fallback
-  ],
+  origin: function(origin, callback) {
+    // Allow any frontend URL for easy deployment
+    callback(null, true);
+  },
   credentials: true
 }));
 app.use(bodyParser.json({ limit: '10mb' }));
