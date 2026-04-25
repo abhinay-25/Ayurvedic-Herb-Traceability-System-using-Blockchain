@@ -20,6 +20,9 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   turbopack: {},
+  experimental: {
+    serverComponentsExternalPackages: ['pino', 'pino-pretty'],
+  },
 }
 
 module.exports = nextConfig
