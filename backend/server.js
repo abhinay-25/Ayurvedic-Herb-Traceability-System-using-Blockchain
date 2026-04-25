@@ -262,3 +262,5 @@ function gracefulShutdown(signal) {
     }, 10000);
   };
 }
+
+module.exports = app;
