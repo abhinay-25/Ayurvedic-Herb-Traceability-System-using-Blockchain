@@ -16,12 +16,10 @@ const nextConfig = {
     }
     return config;
   },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
   typescript: {
     ignoreBuildErrors: true,
   },
+  turbopack: {},
 }
 
 module.exports = nextConfig
