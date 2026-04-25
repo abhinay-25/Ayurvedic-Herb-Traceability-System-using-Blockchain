@@ -1,1 +1,0 @@
-cd "c:\SIH 2025\ayurveda-herb-traceability\contracts"; npx hardhat verify --network fuji 0x5635517478f22Ca57a6855b9fcd7d897D977E958
