@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   transpilePackages: ['@rainbow-me/rainbowkit'],
-  outputFileTracingRoot: __dirname,
   webpack: (config, { isServer }) => {
     // Handle missing React Native dependencies
     if (!isServer) {
@@ -20,9 +19,7 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   turbopack: {},
-  experimental: {
-    serverComponentsExternalPackages: ['pino', 'pino-pretty'],
-  },
+  serverExternalPackages: ['pino', 'pino-pretty'],
 }
 
 module.exports = nextConfig
