@@ -2,10 +2,10 @@ import { getDefaultConfig } from '@rainbow-me/rainbowkit';
 import { avalancheFuji } from 'wagmi/chains';
 
 // Get project ID from environment variables with fallback
-const projectId = process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID || 'demo-project-id-development-only';
+const projectId = process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID || 'c96646f9038d179617300c32bfaee39d';
 
 // Validate project ID
-if (!projectId || projectId === 'demo-project-id-development-only') {
+if (!projectId || projectId === 'c96646f9038d179617300c32bfaee39d') {
   console.warn('⚠️  WalletConnect Project ID is not set or using demo ID. Please get a valid project ID from https://cloud.walletconnect.com');
 }
 
