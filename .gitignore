@@ -11,4 +11,5 @@ coverage/
 *.tgz
 *.tar.gz
 .vscode/
+.env.example
 .idea/
