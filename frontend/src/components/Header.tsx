@@ -26,7 +26,7 @@ export function Header() {
             </span>
           </Link>   
 
-          {/* Desktop Navigation */}
+          {/* Desktop Navigation */}    
           <nav className="hidden md:flex space-x-8">
             {navigation.map((item) => (
               <Link
