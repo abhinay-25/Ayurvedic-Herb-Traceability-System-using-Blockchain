@@ -29,7 +29,7 @@ export function Header() {
           {/* Desktop Navigation */}    
           <nav className="hidden md:flex space-x-8">
             {navigation.map((item) => (
-              <Link
+              <Link     
                 key={item.name}
                 href={item.href}
                 className="text-gray-600 hover:text-green-600 px-3 py-2 text-sm font-medium transition-colors"
