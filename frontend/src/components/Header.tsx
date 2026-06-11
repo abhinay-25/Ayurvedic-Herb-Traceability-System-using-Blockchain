@@ -39,7 +39,7 @@ export function Header() {
             ))}
           </nav>
 
-          {/* Wallet Connection Button */}
+          {/* Wallet Connection Button */}      
           <div className="hidden md:flex items-center space-x-4">
             <WalletConnection />
           </div>
