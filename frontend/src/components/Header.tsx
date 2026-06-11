@@ -28,7 +28,7 @@ export function Header() {
 
           {/* Desktop Navigation */}    
           <nav className="hidden md:flex space-x-8">
-            {navigation.map((item) => (
+            {navigation.map((item) => (     
               <Link     
                 key={item.name}
                 href={item.href}
