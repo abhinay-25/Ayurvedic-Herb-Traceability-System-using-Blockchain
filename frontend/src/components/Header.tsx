@@ -45,7 +45,7 @@ export function Header() {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="md:hidden">         
             <Button
               variant="ghost"
               size="sm"
