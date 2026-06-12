@@ -51,7 +51,7 @@ export function Header() {
               size="sm"              
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
-              {isMenuOpen ? (
+              {isMenuOpen ? (                       
                 <X className="h-6 w-6" />
               ) : (
                 <Menu className="h-6 w-6" />
