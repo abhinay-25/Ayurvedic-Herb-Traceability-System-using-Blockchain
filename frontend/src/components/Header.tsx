@@ -71,7 +71,7 @@ export function Header() {
                   className="block px-3 py-2 text-gray-600 hover:text-green-600 text-sm font-medium"                  
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  {item.name}
+                  {item.name}             
                 </Link>
               ))}
               <div className="pt-4 pb-2">
