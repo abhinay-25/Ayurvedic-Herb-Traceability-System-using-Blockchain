@@ -48,7 +48,7 @@ export function Header() {
           <div className="md:hidden">         
             <Button
               variant="ghost"
-              size="sm"
+              size="sm"              
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               {isMenuOpen ? (
