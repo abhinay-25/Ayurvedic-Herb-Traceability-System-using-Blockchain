@@ -62,7 +62,7 @@ export function Header() {
 
         {/* Mobile Navigation */}                
         {isMenuOpen && (
-          <div className="md:hidden">                            
+          <div className="md:hidden">                                              
             <div className="px-2 pt-2 pb-3 space-y-1 border-t border-gray-200">
               {navigation.map((item) => (
                 <Link
