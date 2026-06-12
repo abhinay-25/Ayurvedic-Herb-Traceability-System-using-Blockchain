@@ -57,7 +57,7 @@ export function Header() {
                 <Menu className="h-6 w-6" />                   
               )}
             </Button>
-          </div>
+          </div>               
         </div>
 
         {/* Mobile Navigation */}
