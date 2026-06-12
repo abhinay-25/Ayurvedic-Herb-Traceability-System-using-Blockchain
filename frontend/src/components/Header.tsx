@@ -54,7 +54,7 @@ export function Header() {
               {isMenuOpen ? (                       
                 <X className="h-6 w-6" />
               ) : (
-                <Menu className="h-6 w-6" />
+                <Menu className="h-6 w-6" />                   
               )}
             </Button>
           </div>
