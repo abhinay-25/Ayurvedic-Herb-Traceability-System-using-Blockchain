@@ -50,7 +50,7 @@ contract HerbTraceability {
             status: status,
             timestamp: block.timestamp
         });
-
+                 
         // Add to history
         herbHistory[herbId].push(newHerb);
         
