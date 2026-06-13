@@ -39,7 +39,7 @@ contract HerbTraceability {
         require(bytes(status).length > 0, "Status cannot be empty");
         
         // Check if herb doesn't already exist
-        require(!herbExists[herbId], "Herb with this ID already exists");
+        require(!herbExists[herbId], "Herb with this ID already exists");                       
 
         // Create new herb entry
         Herb memory newHerb = Herb({
