@@ -5,7 +5,7 @@ contract HerbTraceability {
     struct Herb {
         string herbId;
         string name;
-        string collector;
+        string collector;    
         string geoTag;     // stored as "lat,long"
         string status;
         uint256 timestamp;
