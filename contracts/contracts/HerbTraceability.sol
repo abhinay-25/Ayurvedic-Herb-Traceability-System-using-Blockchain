@@ -35,7 +35,7 @@ contract HerbTraceability {
         require(bytes(herbId).length > 0, "Herb ID cannot be empty");
         require(bytes(name).length > 0, "Name cannot be empty");
         require(bytes(collector).length > 0, "Collector cannot be empty");
-        require(bytes(geoTag).length > 0, "GeoTag cannot be empty");
+        require(bytes(geoTag).length > 0, "GeoTag cannot be empty");                    
         require(bytes(status).length > 0, "Status cannot be empty");
         
         // Check if herb doesn't already exist
