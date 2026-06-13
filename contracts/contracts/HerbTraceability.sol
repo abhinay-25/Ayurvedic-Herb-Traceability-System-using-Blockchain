@@ -43,7 +43,7 @@ contract HerbTraceability {
 
         // Create new herb entry
         Herb memory newHerb = Herb({
-            herbId: herbId,
+            herbId: herbId,                            
             name: name,
             collector: collector,
             geoTag: geoTag,
