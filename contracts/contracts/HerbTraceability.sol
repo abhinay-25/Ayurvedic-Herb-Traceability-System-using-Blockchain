@@ -46,7 +46,7 @@ contract HerbTraceability {
             herbId: herbId,                            
             name: name,
             collector: collector,
-            geoTag: geoTag,
+            geoTag: geoTag,             
             status: status,
             timestamp: block.timestamp
         });
