@@ -27,7 +27,7 @@ contract HerbTraceability {
     // Add initial herb entry
     function addHerb(
         string memory herbId,
-        string memory name,
+        string memory name,                 
         string memory collector,
         string memory geoTag,
         string memory status
