@@ -19,7 +19,7 @@ contract HerbTraceability {
     
     // Array to keep track of all herbIds for enumeration
     string[] public allHerbIds;
-
+        
     // Events
     event HerbAdded(string indexed herbId, string name, string collector, uint256 timestamp);
     event StatusUpdated(string indexed herbId, string newStatus, uint256 timestamp);
